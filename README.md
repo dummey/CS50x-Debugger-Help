@@ -49,3 +49,5 @@ If not, you can use the 'Process List' in Cloud9 to find the Node process and ki
 If all else fails, have you tried turning it off and back on again? 
 
 https://docs.c9.io/docs/restarting-your-workspace
+
+![Restart](images/restart.gif)
