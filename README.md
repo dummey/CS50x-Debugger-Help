@@ -28,5 +28,7 @@ If you do not see 'C (GDB Debugging)', you will need to manually add it by copin
 ```
 
 ##Debugger Never Connects, Spinning Circle of Doom
+After clicking the Debug button, the terminal area will activate, but is stuck on "Listening on por #####".
+![Debugger is Stuck](images/debugger-stall.gif)
 
 ##Everything is Broken
