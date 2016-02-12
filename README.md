@@ -2,10 +2,15 @@
 Here are a list of problems and workarounds that have been discovered about the Cloud9 Debugger. The IDE is still in development and thus will have unexpected behavior. If something seems to be amiss and a reasonable solution can not be found in a reasonable time, please ask. 
 
 ##C GDB Runner is Missing
-For an unknown reason, the configuration file (known as Runners) for C can go missing in some IDEs. This can be checked by clicking on 'Runner: ' in a debugger terminal:
+The configuration file for the GDB Runner can be accidently deleted if the parent folder, `.c9` is deleted. This can be checked by clicking on 'Runner: ' in a debugger terminal:
 ![Finding the Runner](images/runner-find.gif)
 
-If you **do not** see 'C (GDB Debugging)', you will need to manually add it by copying the below block and pasting it into a new Runner config. 
+If you **do not** see 'C (GDB Debugging)', you have two options:
+###Use update50
+You can run `update50` by typing that command into the terminal. This will download the default runners which should include the GDB one.
+
+###Manually add the config
+You will need to manually add it by copying the below block and pasting it into a new Runner config. 
 
 ```
 // For more information see http://docs.c9.io:8080/#!/api/run-method-run
